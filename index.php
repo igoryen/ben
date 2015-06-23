@@ -4,17 +4,9 @@
 //  include $filename;
 //}
 require './Person.php';
-require './Male.php';
-require './Female.php';
 require './Ent.php';
 require './EntGen.php';
-//require './Nick.php';
-//require './SonOfNick.php';
-//
-//$Nick = new Male('Nikolay');
-//$Nick->myName();
-//$Nick->myKind();
-//$Nick->myGender();
+
 
 $Nick = new EntGen('Nikolay', 5, 'Mid 1900s', 'male');
 $Nick->myFirstName();
@@ -26,12 +18,6 @@ $Nick->myAncestry();
 $Nick->myEpoch();
 $Nick->myGeneration();
 
-
-//$Nick->getCountry();
-//$Nick->getEpoch();
-//$Nick->getFamilyName();
-//$Nick->getGenerationNumber();
-//$Nick->getKind();
 
 echo '<hr>';
 
