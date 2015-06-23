@@ -6,6 +6,19 @@
 
 require './EntGen.php';
 
+$Nick = new EntGen('Grigory', 4, 'Early 1900s', 'male');
+$Nick->myFirstName();
+$Nick->myFamilyName();
+$Nick->myKind();
+$Nick->myGender();
+$Nick->myFeatures();
+$Nick->myAncestry();
+$Nick->myEpoch();
+$Nick->myGeneration();
+
+
+echo '<hr>';
+
 
 $Nick = new EntGen('Nikolay', 5, 'Mid 1900s', 'male');
 $Nick->myFirstName();
@@ -46,13 +59,13 @@ $Igor->myGeneration();
 
 echo '<hr>';
 
-$Igor = new EntGen('Joy', 7, 'Early 2000s', 'female');
-$Igor->myFirstName();
-$Igor->myFamilyName();
-$Igor->myKind();
-$Igor->myGender();
-$Igor->myFeatures();
-$Igor->myAncestry();
-$Igor->myEpoch();
-$Igor->myGeneration();
+$Joy = new EntGen('Joy', 7, 'Early 2000s', 'female');
+$Joy->myFirstName();
+$Joy->myFamilyName();
+$Joy->myKind();
+$Joy->myGender();
+$Joy->myFeatures();
+$Joy->myAncestry();
+$Joy->myEpoch();
+$Joy->myGeneration();
 
