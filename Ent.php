@@ -17,11 +17,11 @@ class Ent extends Person {
     return parent::myKind();
   }
 
-  public function getFamilyName() {
+  private function getFamilyName() {
     return self::FAMILY_NAME;
   }
 
-  public function getAncestry() {
+  private function getAncestry() {
     return self::ANCESTRY;
   }
 
