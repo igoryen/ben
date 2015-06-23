@@ -3,8 +3,7 @@
 //foreach (glob("class/*.php") as $filename) {
 //  include $filename;
 //}
-require './Person.php';
-require './Ent.php';
+
 require './EntGen.php';
 
 
