@@ -19,10 +19,14 @@ class EntGen extends Ent {
    * @param type $epoch
    */
   function __construct($fname, $genNum, $epoch, $gender) {
-    $this->_fname = $fname;
-    $this->_genNum = $genNum;
-    $this->_epoch = $epoch;
-    $this->_gender = new Gender($gender);
+    try {
+      $this->_fname = $fname;
+      $this->_genNum = $genNum;
+      $this->_epoch = $epoch;
+      $this->_gender = new Gender($gender);
+    } catch (Exception $e) {
+      echo 'Khem! Caught exception: ', $e->getMessage(), "\n";
+    }
   }
 
   ########################################
@@ -77,7 +81,7 @@ class EntGen extends Ent {
     $this->_gender->myGender();
     return;
   }
-  
+
   public function myFeatures() {
     $this->_gender->myFeatures();
     return;
