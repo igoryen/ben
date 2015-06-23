@@ -5,18 +5,32 @@ class Male extends Person{
   const SEX = 'male';
   public $_name;
   
+  /**
+   * Constructor: initialize $_name
+   * @param string $name
+   */
   function __construct($name) {
     $this->_name = $name;
   }
   
-  public function mySex(){
-    echo 'I am ' . self::SEX . ', hooah! ';
+  /**
+   * Says "My gender is male"
+   */
+  public function myGender(){
+    echo 'My gender is ' . self::SEX . '. ';
   }
   
+  /**
+   * Says "My name is $_name"
+   */
   public function myName(){
-    echo 'My name is ' . $this->_name .'. ';
+    echo 'My name is ' . $this->_name . '. ';
   }
   
+  /**
+   * Return parent::myKind()
+   * @return type
+   */
   public function myKind(){
     return parent::myKind();
   }

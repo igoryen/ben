@@ -6,14 +6,68 @@
 require './Person.php';
 require './Male.php';
 require './Female.php';
-require './Nick.php';
-require './SonOfNick.php';
+require './Ent.php';
+require './EntGen.php';
+//require './Nick.php';
+//require './SonOfNick.php';
 //
 //$Nick = new Male('Nikolay');
 //$Nick->myName();
 //$Nick->myKind();
-//$Nick->mySex();
+//$Nick->myGender();
+
+$Nick = new EntGen('Nikolay', 5, 'Mid 1900s', 'male');
+$Nick->myFirstName();
+$Nick->myFamilyName();
+$Nick->myKind();
+$Nick->myGender();
+$Nick->myFeatures();
+$Nick->myAncestry();
+$Nick->myEpoch();
+$Nick->myGeneration();
 
 
-$Iggy = new SonOfNick('Igor');
-$Iggy::myKind();
+//$Nick->getCountry();
+//$Nick->getEpoch();
+//$Nick->getFamilyName();
+//$Nick->getGenerationNumber();
+//$Nick->getKind();
+
+echo '<hr>';
+
+$Vladimir = new EntGen('Vladimir', 5, 'Mid 1900s', 'male');
+$Vladimir->myFirstName();
+$Vladimir->myFamilyName();
+$Vladimir->myKind();
+$Vladimir->myGender();
+$Vladimir->myFeatures();
+$Vladimir->myAncestry();
+$Vladimir->myEpoch();
+$Vladimir->myGeneration();
+
+
+
+echo '<hr>';
+
+$Igor = new EntGen('Igor', 6, 'Late 1900s', 'male');
+$Igor->myFirstName();
+$Igor->myFamilyName();
+$Igor->myKind();
+$Igor->myGender();
+$Igor->myFeatures();
+$Igor->myAncestry();
+$Igor->myEpoch();
+$Igor->myGeneration();
+
+echo '<hr>';
+
+$Igor = new EntGen('Joy', 7, 'Early 2000s', 'female');
+$Igor->myFirstName();
+$Igor->myFamilyName();
+$Igor->myKind();
+$Igor->myGender();
+$Igor->myFeatures();
+$Igor->myAncestry();
+$Igor->myEpoch();
+$Igor->myGeneration();
+

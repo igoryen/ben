@@ -1,9 +1,12 @@
 <?php
 
 class Person{
-  const NAME = 'Person';
+  const NAME = 'Human';
   
+  /**
+   * Says I am human
+   */
   public function myKind(){
-    echo 'I am a ' . self::NAME . '. ';
+    echo 'I am ' . self::NAME . '. ';
   }
 }
