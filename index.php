@@ -6,15 +6,15 @@
 
 require './EntGen.php';
 
-$Nick = new EntGen('Grigory', 4, 'Early 1900s', 'male');
-$Nick->myFirstName();
-$Nick->myFamilyName();
-$Nick->myKind();
-$Nick->myGender();
-$Nick->myFeatures();
-$Nick->myAncestry();
-$Nick->myEpoch();
-$Nick->myGeneration();
+$Grig = new EntGen('Grigory', 4, 'Early 1900s', 'male');
+$Grig->myFirstName();
+$Grig->myFamilyName();
+$Grig->myKind();
+$Grig->myGender();
+$Grig->myFeatures();
+$Grig->myAncestry();
+$Grig->myEpoch();
+$Grig->myGeneration();
 
 
 echo '<hr>';
