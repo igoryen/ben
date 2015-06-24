@@ -14,6 +14,7 @@ class Ent extends Person {
   # for a personal name?
 
   public function myKind() {
+    # accessing the parent's myKind()
     return parent::myKind();
   }
 
